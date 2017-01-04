@@ -1,5 +1,7 @@
 <?php
-   $id = $_GET['id'];
+   $id = (int) htmlspecialchars($_GET['id']);
+   
+   
    
    try {
         require_once('funciones/bd_conexion.php');
